@@ -13,7 +13,7 @@ killTomcat()
         kill -9 "${pid}"
     fi
 }
-cd $PROJ_PATH/demo
+cd $PROJ_PATH/
 mvn clean install
 #杀死Tomcat
 killTomcat
@@ -24,7 +24,7 @@ rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
 rm -f $TOMCAT_APP_PATH/webapps/demo.war
 
 #复制新的工程
-cp $PROJ_PATH/demo/target/demo.war $TOMCAT_APP_PATH/webapps/
+cp $PROJ_PATH/target/demo.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
 mv demo.war ROOT.war
