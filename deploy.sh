@@ -31,4 +31,4 @@ mv demo.war ROOT.war
 
 #启动tomcat
 cd $TOMCAT_APP_PATH/
-sh bin/startup/sh
+sh bin/startup.sh
