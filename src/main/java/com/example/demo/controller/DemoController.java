@@ -14,6 +14,6 @@ public class DemoController {
     @RequestMapping("/test")
     public String test(){
 //       treeMapper.selectById(3);
-        return "hello world!";
+        return "hello china!";
     }
 }
