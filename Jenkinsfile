@@ -10,6 +10,6 @@ pipeline{
         }
     }
     options{
-        githubConnection('test')
+        withCredentials('test')
     }
 }
