@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                echo 'Hello Worlds'
+                echo 'Hello World'
                 sh 'pwd'
             }
         }
