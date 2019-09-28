@@ -9,7 +9,4 @@ pipeline{
             }
         }
     }
-    options{
-        withCredentials(['test'])
-    }
 }
