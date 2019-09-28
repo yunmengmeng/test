@@ -9,4 +9,7 @@ pipeline{
             }
         }
     }
+    options{
+        githubConnection('test')
+    }
 }
