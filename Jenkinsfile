@@ -10,6 +10,6 @@ pipeline{
         }
     }
     options{
-        withCredentials('test')
+        withCredentials(['test'])
     }
 }
