@@ -1,6 +1,6 @@
 #！/usr/bin/env /bash
 cd $PROJ_PATH/
-mvn clean pakcgae
+mvn clean packgae
 /bin/cp -r target/demo.war /usr/jenkins/
 containId=`docker ps |grep hx-docker|awk '{print $1}'`
 # 删掉容器
