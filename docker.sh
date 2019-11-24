@@ -18,5 +18,6 @@ then
 else
         docker rmi -f "${imageId}"
 fi
+cd /usr/jenkins/
 docker build -t hx-docker .
 docker run -d --name=hx-docker  --restart=always  -v /disk/logs/docker/apps-logs/asset-guest:/usr/local/tomcat/logs -p 8081:8080 hx-docker
