@@ -25,5 +25,5 @@
 
 查看order表主键的自增值，主键+1且order表没有新数据，分布式事务调用成功
 
-#### ### 数据库存储
+#### 数据库存储
 seata默认以文件存储，如果要以数据库存储，需要编辑bin目录下的file.conf，设置为db，同时执行sd-eurake项目下的`seata-eureka.sql`
