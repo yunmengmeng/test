@@ -31,7 +31,7 @@ public class DatasourceConfiguration {
     }
 
     @Bean
-    public SqlSessionFactory sqlSessionFactory(DataSourceProxy dataSourceProxy)throws Exception{
+    public SqlSessionFactory sqlSessionFactory(DataSource dataSourceProxy)throws Exception{
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSourceProxy);
         sqlSessionFactoryBean.setMapperLocations(new PathMatchingResourcePatternResolver()

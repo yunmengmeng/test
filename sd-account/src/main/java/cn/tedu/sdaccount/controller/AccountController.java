@@ -16,7 +16,7 @@ public class AccountController {
 
     @GetMapping("/decrease")
     public String decrease(Long userId, BigDecimal money) {
-        accountService.decrease(userId,money);
+        accountService.decrease(userId, money);
         return "user money decrease success";
     }
 }

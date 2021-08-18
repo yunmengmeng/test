@@ -10,17 +10,20 @@ spring:
     alibaba:
       seata:
         tx-service-group: my_test_tx_group
-
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        registerEnabled: true
 server:
   port: 8081
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
   instance:
     prefer-ip-address: true
 
-mybatis:
+mybatis-plus:
   type-aliases-package: cn.tedu.sdaccount.entity
   mapper-locations:
     - classpath:/mapper/*Mapper.xml

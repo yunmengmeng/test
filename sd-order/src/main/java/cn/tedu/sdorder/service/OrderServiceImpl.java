@@ -24,7 +24,7 @@ public class OrderServiceImpl implements OrderService {
         orderMapper.create(order);
 
         // 修改库存
-        storageClient.decrease(order.getProductId(), order.getCount());
+//        storageClient.decrease(order.getProductId(), order.getCount());
 
         // 修改账户余额
         String decrease = accountClient.decrease(order.getUserId(), order.getMoney());

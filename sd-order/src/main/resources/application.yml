@@ -13,6 +13,10 @@ spring:
     alibaba:
       seata:
         tx-service-group: my_test_tx_group
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        registerEnabled: true
 server:
   port: 8083
 
@@ -21,7 +25,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
-mybatis:
+mybatis-plus:
   type-aliases-package: cn.tedu.sdorder.entity
 #  mapper-locations:
 #    - classpath:/mapper/*Mapper.xml
@@ -36,3 +40,7 @@ logging:
 ribbon:
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 0
+
+feign:
+  hystrix:
+    enabled: true
