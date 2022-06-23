@@ -10,7 +10,7 @@ import java.io.Serializable;
  * 
  * </p>
  *
- * @author huxin
+ * @author yunmengmeng
  * @since 2019-02-21
  */
 public class Tree extends Model<Tree> {

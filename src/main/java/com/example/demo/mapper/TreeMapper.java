@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Mapper;
  *  Mapper 接口
  * </p>
  *
- * @author huxin
+ * @author yunmengmeng
  * @since 2019-02-21
  */
 public interface TreeMapper extends BaseMapper<Tree> {

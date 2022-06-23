@@ -17,7 +17,7 @@ public class AutoGenerator {
         //1. 全局配置
         GlobalConfig config = new GlobalConfig();
         config.setActiveRecord(true) // 是否支持AR模式
-                .setAuthor("huxin") // 作者
+                .setAuthor("yunmengmeng") // 作者
                 //.setOutputDir("D:\\workspace_mp\\mp03\\src\\main\\java") // 生成路径
                 .setOutputDir("D:\\work") // 生成路径
                 .setFileOverride(true)  // 文件覆盖
