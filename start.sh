@@ -3,7 +3,7 @@
 whoami
 # ----------------------------------------------------------------------------------------------------------------------------------------
 # example:
-# windows: java -jar -server -Xms2048m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=C:\Users\admin\Desktop\fsdownload\logs  -Djavax.net.ssl.sessionCacheSize=20480 -Dspring.profiles.active=test C:\Users\admin\Desktop\fsdownload\demo.jar
+# windows: java -jar -server -Xms2048m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=C:\Users\admin\Desktop\fsdownload\logs -Dfile.encoding=utf-8 -Djavax.net.ssl.sessionCacheSize=20480 -Dspring.profiles.active=test C:\Users\admin\Desktop\fsdownload\demo.jar
 # linux: nohup java -jar -server -Xms2048m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/home/jenkins/demo/logs/gc/gc-%t.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/jenkins/demo/logs -Dfile.encoding=utf-8 -Djavax.net.ssl.sessionCacheSize=20480 -Dspring.profiles.active=test /home/jenkins/demo/demo.jar  >/dev/null 2>&1 &
 # docker: java -jar -server -Xms2048m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/home/jenkins/demo/logs/gc/gc-%t.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/jenkins/demo/logs -Dfile.encoding=utf-8 -Djavax.net.ssl.sessionCacheSize=20480 -Dspring.profiles.active=test /home/jenkins/demo/demo.jar
 # linux会忽略\，所以\.后缀名就是.后缀名
